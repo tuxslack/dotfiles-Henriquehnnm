@@ -39,8 +39,8 @@ Here are some screenshots of my setup:
 - **starship.toml**  
   Configuration for [Starship](https://starship.rs/), a minimal and fast shell prompt.
 
-- **superfile/**  
-  Extra scripts and utilities for further automation and customization.
+- **superfile/**
+  Configs for simple and efficient File Manager TUI superfile
 
 ## Requirements
 
@@ -49,6 +49,7 @@ Here are some screenshots of my setup:
 - [Starship](https://starship.rs/)
 - [Bat](https://github.com/sharkdp/bat)
 - [Cava](https://karlstav.github.io/cava/)
+- [Superfile](https://superfile.netlify.app/)
 - Custom fonts (see the `fonts` folder)
 
 ## How to Use
