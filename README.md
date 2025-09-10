@@ -65,6 +65,7 @@ Here are some screenshots of my setup:
 - [Bat](https://github.com/sharkdp/bat)
 - [Cava](https://karlstav.github.io/cava/)
 - [Superfile](https://superfile.netlify.app/)
+- [Krohnkite](https://github.com/esjeon/krohnkite)
 - Custom fonts (see the `fonts` folder)
 
 ## How to Use
