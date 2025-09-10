@@ -84,12 +84,3 @@ set -Ux fish_user_paths ~/.npm-global/bin $fish_user_paths
 
 # ---[Bat]---
 alias cat="batcat"
-
-# ---[Docker]---
-alias run-alpine='sudo docker run -it --rm alpine'
-alias run-fedora='sudo docker run -it --rm fedora'
-alias run-arch='sudo docker run -it --rm archlinux'
-alias run-opensuse='sudo docker run -it --rm opensuse/tumbleweed'
-
-# ---[LazyDocker]---
-alias lzd="sudo docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock -v ~/.config/lazydocker:/home/jesseduffield/.config/lazydocker lazyteam/lazydocker"
