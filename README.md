@@ -1,4 +1,6 @@
-# dotfiles
+<div text-align="center">
+  # dotfiles
+</div>
 
 Personal dotfiles repository to easily set up and replicate my development environment.
 
