@@ -1,8 +1,12 @@
-<div text-align="center">
-  # dotfiles
-</div>
+# dotfiles
 
 Personal dotfiles repository to easily set up and replicate my development environment.
+
+
+![Debian 13](https://img.shields.io/badge/Debian-13-red?style=flat-square&logo=debian)
+![KDE Plasma](https://img.shields.io/badge/KDE-Plasma-blue?style=flat-square&logo=kde)
+![Neovim](https://img.shields.io/badge/Neovim-0.9-green?style=flat-square&logo=neovim)
+![Rose Pine](https://img.shields.io/badge/Theme-Rose%20Pine-pink?style=flat-square)
 
 ## Screenshots
 
