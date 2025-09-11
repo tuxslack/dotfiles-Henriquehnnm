@@ -51,11 +51,11 @@ Here are some screenshots of my setup:
 - **public/**  
   Public assets like screenshots and shareable scripts.
 
-- **starship.toml**  
-  Configuration for [Starship](https://starship.rs/), a minimal and fast shell prompt.
-
 - **superfile/**
   Configs for simple and efficient File Manager TUI superfile
+
+- **starship.toml**  
+  Configuration for [Starship](https://starship.rs/), a minimal and fast shell prompt.
 
 ## Requirements
 
