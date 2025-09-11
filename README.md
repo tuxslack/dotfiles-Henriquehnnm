@@ -63,7 +63,7 @@ Here are some screenshots of my setup:
 - [Neovim](https://neovim.io/) **with [LazyVim](https://www.lazyvim.org/)**
 - [Starship](https://starship.rs/)
 - [Bat](https://github.com/sharkdp/bat)
-- [Cava](https://karlstav.github.io/cava/)
+- [Cava](https://github.com/karlstav/cava)
 - [Superfile](https://superfile.netlify.app/)
 - [Krohnkite](https://github.com/esjeon/krohnkite)
 - Custom fonts (see the `fonts` folder)
