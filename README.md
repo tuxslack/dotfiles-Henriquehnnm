@@ -66,7 +66,7 @@ Here are some screenshots of my setup:
 - [Cava](https://github.com/karlstav/cava)
 - [Superfile](https://superfile.netlify.app/)
 - [Krohnkite](https://github.com/esjeon/krohnkite)
-- Custom fonts (see the `fonts` folder)
+- Custom fonts (see the [`fonts`](./fonts) folder)
 
 ## How to Use
 
