@@ -61,7 +61,7 @@ Here are some screenshots of my setup:
   Configuration files for [Waybar](https://github.com/Alexays/Waybar), a highly customizable status bar for Wayland compositors.
 
 - **wlogout/**  
-  Configuration for [wlogout](https://archlinux.org/packages/community/any/wlogout/), a customizable logout menu for Wayland.
+  Configuration for [wlogout](https://github.com/ArtsyMacaw/wlogout), a customizable logout menu for Wayland.
 
 - **lazygit/**  
   Configuration for [Lazygit](https://github.com/jesseduffield/lazygit), a simple terminal UI for git commands.
@@ -75,7 +75,7 @@ Here are some screenshots of my setup:
 - [Cava](https://github.com/karlstav/cava)
 - [Superfile](https://superfile.netlify.app/)
 - [Waybar](https://github.com/Alexays/Waybar)
-- [wlogout](https://archlinux.org/packages/community/any/wlogout/)
+- [wlogout](https://github.com/ArtsyMacaw/wlogout)
 - [Lazygit](https://github.com/jesseduffield/lazygit)
 - [Krohnkite](https://github.com/esjeon/krohnkite)
 - Custom fonts (see the [`fonts`](./fonts) folder)
