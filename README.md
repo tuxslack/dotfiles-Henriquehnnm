@@ -66,9 +66,6 @@ Here are some screenshots of my setup:
 - **lazygit/**  
   Configuration for [Lazygit](https://github.com/jesseduffield/lazygit), a simple terminal UI for git commands.
 
-- **Krohnkite/**  
-  Configs for tilling on KDE Plasma
-
 ## Requirements
 
 - [Fish Shell](https://fishshell.com/)
