@@ -1,0 +1,68 @@
+// -*- mode: jsonc -*-
+{
+    "layer": "top",
+    "margin": 4,
+    "spacing": 4,
+    "modules-left": [
+        "custom/kde-desktop"
+    ],
+    "modules-center": [],
+    "modules-right": [
+        "pulseaudio",
+        "backlight",
+        "keyboard-state",
+        "custom/wifi",
+        "clock",
+        "custom/power"
+    ],
+    "custom/kde-desktop": {
+        "interval": 1,
+        "exec": "qdbus org.kde.KWin /KWin currentDesktop",
+        "format": "  {}"
+    },
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "{icon} {percent}%",
+        "format-icons": [
+            "󰌵"
+        ]
+    },
+    "keyboard-state": {
+        "numlock": true,
+        "capslock": true,
+        "format": " {name} {icon}",
+        "format-icons": {
+            "locked": "",
+            "unlocked": ""
+        }
+    },
+    "pulseaudio": {
+        "scroll-step": 5,
+        "format": "{icon} {volume}%",
+        "format-muted": " Muted",
+        "format-icons": {
+            "default": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "on-click": "pavucontrol"
+    },
+    "custom/wifi": {
+        "format": "",
+        "tooltip": false,
+        "on-click": "nm-connection-editor"
+    },
+    "clock": {
+        "timezone": "America/Sao_Paulo",
+        "format": " {:%H:%M}",
+        "format-alt": " {:%d/%m/%Y}",
+        "tooltip-format": "<big>{:%A, %d de %B de %Y}</big>",
+        "on-click": "gnome-calendar"
+    },
+    "custom/power": {
+        "format": "",
+        "on-click": "wlogout"
+    }
+}

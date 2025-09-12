@@ -1,0 +1,108 @@
+/*
+ * =================================================================
+ * Rosé Pine for Waybar
+ * =================================================================
+ */
+
+/* --- Global --- */
+* {
+  /* `-gtk-font-name` is crucial for icons */
+  font-family: "JetBrainsMono Nerd Font", FontAwesome, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  min-height: 0;
+}
+
+/* --- A Janela Principal da Waybar --- */
+window#waybar {
+  background: transparent; /* Fundo transparente para um visual flutuante */
+  color: #e0def4; /* Cor do texto padrão (Text) */
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+/* --- Dica de Ferramenta (Tooltip) --- */
+tooltip {
+  background: #1f1d2e; /* Surface */
+  border-radius: 10px;
+  border: 2px solid #c4a7e7; /* Iris */
+}
+
+/* --- Estilo Geral dos Módulos --- */
+#workspaces,
+#clock,
+#pulseaudio,
+#backlight,
+#keyboard-state,
+#custom-wifi,
+#custom-power,
+#custom-kde-desktop {
+background-color: #1f1d2e; /* Surface */
+padding: 2px 12px;
+margin: 4px 5px;
+border-radius: 10px;
+border: 1px solid #26233a; /* Overlay */
+box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* --- Efeito Hover --- */
+#workspaces button:hover,
+#pulseaudio:hover,
+#backlight:hover,
+#keyboard-state:hover,
+#custom-wifi:hover,
+#clock:hover {
+background-color: #403d52; /* Highlight Med */
+border: 1px solid #c4a7e7; /* Iris */
+}
+
+/*
+ * =================================================================
+ * Cores dos Ícones (Paleta Rosé Pine)
+ * =================================================================
+ */
+
+#custom-kde-desktop {
+color: #31748f; /* Pine */
+/* CORREÇÃO: Alterado para arredondar todos os cantos */
+border-radius: 10px;
+margin-left: 10px;
+}
+
+#pulseaudio {
+color: #9ccfd8; /* Foam */
+}
+
+#backlight {
+color: #f6c177; /* Gold */
+}
+
+#keyboard-state {
+color: #ebbcba; /* Rose */
+}
+
+#custom-wifi {
+color: #c4a7e7; /* Iris */
+}
+
+#clock {
+color: #e0def4; /* Text */
+}
+
+#custom-power {
+color: #eb6f92; /* Love */
+margin-right: 10px;
+/* CORREÇÃO: Alterado para arredondar todos os cantos */
+border-radius: 10px;
+}
+
+/* --- Estados Específicos --- */
+#pulseaudio.muted {
+color: #6e6a86; /* Muted */
+}
+
+#keyboard-state.locked {
+color: #eb6f92; /* Love */
+}
