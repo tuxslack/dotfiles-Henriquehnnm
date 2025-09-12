@@ -7,7 +7,7 @@
 /* --- Global --- */
 * {
   /* `-gtk-font-name` is crucial for icons */
-  font-family: "JetBrainsMono Nerd Font", FontAwesome, sans-serif;
+  font-family: FontAwesome, sans-serif;
   font-size: 14px;
   font-weight: bold;
   border: none;
@@ -38,7 +38,8 @@ tooltip {
 #keyboard-state,
 #custom-wifi,
 #custom-power,
-#custom-kde-desktop {
+#custom-kde-desktop,
+#custom-debian-logo {
 background-color: #1f1d2e; /* Surface */
 padding: 2px 12px;
 margin: 4px 5px;
@@ -53,7 +54,7 @@ box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 #backlight:hover,
 #keyboard-state:hover,
 #custom-wifi:hover,
-#clock:hover {
+#clock:hover #custom-debian-logo {
 background-color: #403d52; /* Highlight Med */
 border: 1px solid #c4a7e7; /* Iris */
 }
@@ -64,13 +65,22 @@ border: 1px solid #c4a7e7; /* Iris */
  * =================================================================
  */
 
+/* --- KDE Workspaces --- */
 #custom-kde-desktop {
-color: #31748f; /* Pine */
-/* CORREÇÃO: Alterado para arredondar todos os cantos */
+background-color: #1f1d2e; /* Surface */
+padding: 2px 12px;
+margin: 4px 5px;
 border-radius: 10px;
-margin-left: 10px;
+border: 1px solid #26233a; /* Overlay */
+box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+color: #e0def4; /* Cor padrão dos números */
 }
 
+/* Desktop ativo */
+#custom-kde-desktop span {
+color: #31748f; /* Pine */
+font-weight: bold;
+}
 #pulseaudio {
 color: #9ccfd8; /* Foam */
 }
@@ -105,4 +115,8 @@ color: #6e6a86; /* Muted */
 
 #keyboard-state.locked {
 color: #eb6f92; /* Love */
+}
+
+#custom-debian-logo {
+color: #eb6f92;
 }
