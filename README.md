@@ -27,6 +27,8 @@ Here are some screenshots of my setup:
 - **Neovim**
   ![Neovim](public/nvim.png)
 
+- **Firefox**
+  ![firefox](public/firefox.png)
 - **Terminal**
   ![Terminal](public/terminal.png)
 
@@ -75,6 +77,7 @@ Here are some screenshots of my setup:
 - [Cava](https://github.com/karlstav/cava)
 - [Superfile](https://superfile.netlify.app/)
 - [Waybar](https://github.com/Alexays/Waybar)
+- [Firefox Developer Edition](https://www.firefox.com/en-US/channel/desktop/developer/) with [textfox](https://github.com/adriankarlen/textfox)
 - [wlogout](https://github.com/ArtsyMacaw/wlogout)
 - [Lazygit](https://github.com/jesseduffield/lazygit)
 - [Krohnkite](https://github.com/esjeon/krohnkite)
