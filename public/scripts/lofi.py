@@ -25,9 +25,10 @@ ASCII_TITLE = """
 
 # Uma classe simples para gerenciar a reprodução de música em uma thread separada.
 class PlayerThread(threading.Thread):
-    def __init__(self, state_dict):
+    def __init__(self, state_dict, music_list):
         super().__init__()
         self.state_dict = state_dict
+        self.music_list = music_list
         self.current_process = None
         self.mpv_socket_path = f"/tmp/mpv_socket_{uuid.uuid4().hex}"
         self.stop_event = threading.Event()
@@ -114,8 +115,12 @@ class PlayerThread(threading.Thread):
 
             # Verifica se o processo mpv terminou por conta própria (ex: música acabou)
             if self.current_process and self.current_process.poll() is not None:
-                self.state_dict["is_playing"] = False
-                self.state_dict["status_text"] = "Parado."
+                # O processo terminou, avança para a próxima música
+                next_index = (self.state_dict["current_song_index"] + 1) % len(self.music_list)
+                self.state_dict["current_song_index"] = next_index
+                self.state_dict["current_url"] = self.music_list[next_index]["url"]
+                self.state_dict["current_title"] = self.music_list[next_index]["title"]
+                self.state_dict["command"] = "play" # Define o comando para tocar a próxima música
                 self.current_process = None
                 self.is_paused = False
 
@@ -208,7 +213,7 @@ def draw_tui(stdscr, state_dict, music_list):
                 title = song["title"]
                 line_width = len(title)
                 start_x = (w - line_width) // 2
-                if idx == current_song_index:
+                if idx == state_dict["current_song_index"]:
                     main_win.attron(curses.A_REVERSE | curses.color_pair(1))
                     main_win.addstr(y, start_x, title)
                     main_win.attroff(curses.A_REVERSE | curses.color_pair(1))
@@ -234,14 +239,14 @@ def draw_tui(stdscr, state_dict, music_list):
 
         # Navegação e comandos estilo Vim
         if key == ord('j'):  # Baixo
-            current_song_index = (current_song_index + 1) % len(music_list)
-            state_dict["current_song_index"] = current_song_index
+            next_index = (state_dict["current_song_index"] + 1) % len(music_list)
+            state_dict["current_song_index"] = next_index
         elif key == ord('k'):  # Cima
-            current_song_index = (current_song_index - 1 + len(music_list)) % len(music_list)
-            state_dict["current_song_index"] = current_song_index
+            prev_index = (state_dict["current_song_index"] - 1 + len(music_list)) % len(music_list)
+            state_dict["current_song_index"] = prev_index
         elif key in [10, 13]:  # Tecla Enter
-            state_dict["current_url"] = music_list[current_song_index]["url"]
-            state_dict["current_title"] = music_list[current_song_index]["title"]
+            state_dict["current_url"] = music_list[state_dict["current_song_index"]]["url"]
+            state_dict["current_title"] = music_list[state_dict["current_song_index"]]["title"]
             state_dict["command"] = "play"
         elif key == ord('p'): # Tecla P para pausa/retomar
             if state_dict["current_url"]:
@@ -266,7 +271,7 @@ def main(stdscr):
     }
 
     # Inicia a thread do reprodutor
-    player_thread = PlayerThread(state_dict)
+    player_thread = PlayerThread(state_dict, MUSIC_LIST)
     player_thread.daemon = True
     player_thread.start()
 
