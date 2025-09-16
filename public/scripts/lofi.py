@@ -7,6 +7,8 @@ import time
 import sys
 import os
 import json
+import socket
+import uuid
 
 # A arte ASCII para o título
 ASCII_TITLE = """
@@ -27,7 +29,9 @@ class PlayerThread(threading.Thread):
         super().__init__()
         self.state_dict = state_dict
         self.current_process = None
+        self.mpv_socket_path = f"/tmp/mpv_socket_{uuid.uuid4().hex}"
         self.stop_event = threading.Event()
+        self.is_paused = False
 
     def run(self):
         while not self.stop_event.is_set():
@@ -43,25 +47,77 @@ class PlayerThread(threading.Thread):
                 if self.current_process:
                     self.current_process.terminate()
                     self.current_process.wait()
+                    # Limpa o socket IPC se ele existir
+                    if os.path.exists(self.mpv_socket_path):
+                        os.unlink(self.mpv_socket_path)
 
-                # Usa mpv ou ffplay para reproduzir o áudio
+                # Usa mpv para reproduzir o áudio com um servidor IPC
                 try:
-                    # mpv command to play audio only
-                    cmd = ['mpv', '--no-video', '--no-terminal', '--audio-display=no', url]
+                    cmd = ['mpv', '--no-video', '--no-terminal', '--audio-display=no',
+                           f'--input-ipc-server={self.mpv_socket_path}', url]
                     self.current_process = subprocess.Popen(cmd, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+
+                    # Espera um pouco para garantir que o socket foi criado
+                    time.sleep(1)
+
                     self.state_dict["is_playing"] = True
+                    self.is_paused = False
                     self.state_dict["status_text"] = f"Tocando: {self.state_dict['current_title']}"
                 except FileNotFoundError:
-                    self.state_dict["status_text"] = "Erro: mpv ou ffplay não encontrado."
+                    self.state_dict["status_text"] = "Erro: mpv não encontrado."
                     self.state_dict["is_playing"] = False
+                except Exception as e:
+                    self.state_dict["status_text"] = f"Erro ao iniciar mpv: {e}"
+                    self.state_dict["is_playing"] = False
+
+            elif self.state_dict["command"] == "toggle_pause":
+                self.state_dict["command"] = ""
+                if self.current_process and self.current_process.poll() is None:
+                    try:
+                        sock = socket.socket(socket.AF_UNIX, socket.SOCK_STREAM)
+                        sock.connect(self.mpv_socket_path)
+
+                        # Envia o comando JSON para mpv
+                        if not self.is_paused:
+                            command = json.dumps({"command": ["set_property", "pause", True]}) + "\n"
+                            self.is_paused = True
+                            self.state_dict["status_text"] = f"Pausado: {self.state_dict['current_title']}"
+                        else:
+                            command = json.dumps({"command": ["set_property", "pause", False]}) + "\n"
+                            self.is_paused = False
+                            self.state_dict["status_text"] = f"Tocando: {self.state_dict['current_title']}"
+
+                        sock.sendall(command.encode())
+                        sock.close()
+
+                        # Atualiza o estado de reprodução
+                        self.state_dict["is_playing"] = not self.is_paused
+
+                    except (socket.error, FileNotFoundError) as e:
+                        self.state_dict["status_text"] = f"Erro de IPC: {e}"
+                        # Se houver um erro, o processo mpv pode ter sido encerrado.
+                        # Reseta o estado
+                        self.state_dict["is_playing"] = False
+                        self.state_dict["status_text"] = "Parado."
+
             elif self.state_dict["command"] == "stop":
+                self.state_dict["command"] = ""
                 if self.current_process:
                     self.current_process.terminate()
                     self.current_process.wait()
                     self.current_process = None
+                    if os.path.exists(self.mpv_socket_path):
+                        os.unlink(self.mpv_socket_path)
                 self.state_dict["is_playing"] = False
                 self.state_dict["status_text"] = "Parado."
-                self.state_dict["command"] = ""
+                self.is_paused = False
+
+            # Verifica se o processo mpv terminou por conta própria (ex: música acabou)
+            if self.current_process and self.current_process.poll() is not None:
+                self.state_dict["is_playing"] = False
+                self.state_dict["status_text"] = "Parado."
+                self.current_process = None
+                self.is_paused = False
 
             time.sleep(0.1)
 
@@ -70,6 +126,8 @@ class PlayerThread(threading.Thread):
         if self.current_process:
             self.current_process.terminate()
             self.current_process.wait()
+        if os.path.exists(self.mpv_socket_path):
+            os.unlink(self.mpv_socket_path)
 
 
 # Função para carregar a lista de músicas de um arquivo JSON
@@ -160,6 +218,11 @@ def draw_tui(stdscr, state_dict, music_list):
         # Desenha a barra de status
         status_win.clear()
         status_win.addstr(0, 2, "Status: " + state_dict["status_text"][:w - 12], curses.A_BOLD)
+
+        # Adiciona a indicação de pausa se a música estiver pausada
+        if state_dict["is_playing"] == False and state_dict["current_url"] is not None:
+             status_win.addstr(0, w - 20, "PAUSADO", curses.color_pair(4) | curses.A_BOLD)
+
         status_win.addstr(0, w - 10, "[q: Sair]", curses.A_DIM)
 
         # Atualiza todas as janelas
@@ -180,6 +243,9 @@ def draw_tui(stdscr, state_dict, music_list):
             state_dict["current_url"] = music_list[current_song_index]["url"]
             state_dict["current_title"] = music_list[current_song_index]["title"]
             state_dict["command"] = "play"
+        elif key == ord('p'): # Tecla P para pausa/retomar
+            if state_dict["current_url"]:
+                state_dict["command"] = "toggle_pause"
         elif key == ord('q'):
             break
 
@@ -211,15 +277,12 @@ def main(stdscr):
         player_thread.join()
 
 if __name__ == "__main__":
-    # Verifica se mpv ou ffplay estão instalados
+    # Verifica se mpv está instalado
     try:
         subprocess.run(["mpv", "--version"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, check=True)
     except (subprocess.CalledProcessError, FileNotFoundError):
-        try:
-            subprocess.run(["ffplay", "-version"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, check=True)
-        except (subprocess.CalledProcessError, FileNotFoundError):
-            print("Erro: 'mpv' ou 'ffplay' não encontrado. Por favor, instale um deles para reproduzir o áudio.")
-            sys.exit(1)
+        print("Erro: 'mpv' não encontrado. Por favor, instale-o para reproduzir o áudio.")
+        sys.exit(1)
 
     try:
         curses.wrapper(main)
