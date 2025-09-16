@@ -79,6 +79,9 @@ alias lzg="lazygit"
 # ---[Cargo]---
 source "$HOME/.cargo/env.fish"
 
+# ---[Lo-fi]---
+alias lofi="python3 ~/.lofi.py"
+
 # ---[NPM]---
 set -Ux fish_user_paths ~/.npm-global/bin $fish_user_paths
 
