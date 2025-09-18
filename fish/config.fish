@@ -88,6 +88,7 @@ alias lofi="python3 ~/.lofi.py"
 
 # ---[NPM]---
 set -Ux fish_user_paths ~/.npm-global/bin $fish_user_paths
+alias vite="npm create vite@latest"
 
 # ---[Bat]---
 alias cat="batcat"
