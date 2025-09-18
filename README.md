@@ -68,6 +68,9 @@ Here are some screenshots of my setup:
 - **lazygit/**  
   Configuration for [Lazygit](https://github.com/jesseduffield/lazygit), a simple terminal UI for git commands.
 
+- **konsole/**
+  Configuration for the [Konsole](https://konsole.kde.org/) terminal emulator.
+
 ## Requirements
 
 - [Fish Shell](https://fishshell.com/)
@@ -80,6 +83,7 @@ Here are some screenshots of my setup:
 - [Firefox Developer Edition](https://www.firefox.com/en-US/channel/desktop/developer/) with [textfox](https://github.com/adriankarlen/textfox)
 - [wlogout](https://github.com/ArtsyMacaw/wlogout)
 - [Lazygit](https://github.com/jesseduffield/lazygit)
+- [Konsole](https://konsole.kde.org/)
 - [Krohnkite](https://github.com/esjeon/krohnkite)
 - Custom fonts (see the [`fonts`](./fonts) folder)
 
