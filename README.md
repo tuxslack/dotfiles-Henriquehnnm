@@ -22,15 +22,16 @@
 Here are some screenshots of my setup:
 
 - **Desktop**
-  ![Desktop](public/desktop.png)
+  ![Desktop](public/desktop.png?1)
 
 - **Neovim**
-  ![Neovim](public/nvim.png)
+  ![Neovim](public/nvim.png?1)
 
 - **Firefox**
-  ![firefox](public/firefox.png)
+  ![firefox](public/firefox.png?1)
+
 - **Terminal**
-  ![Terminal](public/terminal.png)
+  ![Terminal](public/terminal.png?1)
 
 ## Repository Structure
 
