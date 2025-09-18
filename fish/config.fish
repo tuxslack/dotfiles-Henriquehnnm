@@ -12,6 +12,7 @@ zoxide init fish | source
 
 # ---[Listagem]---
 alias ls="lsd -1"
+alias lt="lsd --tree"
 
 # ---[Navegacao]---
 alias cd="z"
@@ -75,6 +76,9 @@ alias local="pwd"
 
 # ---[Lazygit]---
 alias lzg="lazygit"
+
+# ---[Git]---
+git config --global alias.graph "log --graph --oneline --all --decorate"
 
 # ---[Cargo]---
 source "$HOME/.cargo/env.fish"
