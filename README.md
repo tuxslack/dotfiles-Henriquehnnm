@@ -52,7 +52,10 @@ Here are some screenshots of my setup:
   **Note:** This setup depends on [LazyVim](https://www.lazyvim.org/) as the Neovim starter template.
 
 - **public/**  
-  Public assets like screenshots and shareable scripts.
+  Public assets such as screenshots.
+
+- scripst/
+  My useful scripts, which I won't let go of.
 
 - **superfile/**
   Configs for simple and efficient File Manager TUI superfile
