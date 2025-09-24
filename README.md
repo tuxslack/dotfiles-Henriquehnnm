@@ -54,7 +54,7 @@ Here are some screenshots of my setup:
 - **public/**  
   Public assets such as screenshots.
 
-- scripst/
+- **scripts/**
   My useful scripts, which I won't let go of.
 
 - **superfile/**
