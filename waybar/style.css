@@ -41,7 +41,7 @@ tooltip {
 #custom-kde-desktop,
 #custom-debian-logo {
 background-color: #1f1d2e; /* Surface */
-padding: 2px 12px;
+padding: 4px 14px;
 margin: 4px 5px;
 border-radius: 10px;
 border: 1px solid #26233a; /* Overlay */
