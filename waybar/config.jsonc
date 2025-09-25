@@ -50,7 +50,7 @@
     "pulseaudio": {
         "scroll-step": 5,
         "format": "{icon} {volume}%",
-        "format-muted": " Muted",
+        "format-muted": "  Muted",
         "format-icons": {
             "default": ["", "", ""]
         },
