@@ -62,6 +62,9 @@ Here are some screenshots of my setup:
 
 - **starship.toml**  
   Configuration for [Starship](https://starship.rs/), a minimal and fast shell prompt.
+  
+- **wallpapers/**
+  My Wallpaper Collection
 
 - **waybar/**  
   Configuration files for [Waybar](https://github.com/Alexays/Waybar), a highly customizable status bar for Wayland compositors.
