@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Startpage</title>
+    <link
+      rel="shortcut icon"
+      href="/home/broly/.starticon.png"
+      type="image/x-icon"
+    />
+    <style>
+      :root {
+        --rose-bg: #191724;
+        --rose-text: #e0def4;
+        --rose-subtext: #6e6a86;
+        --rose-accent: #31748f;
+        --rose-primary: #ebbcba;
+      }
+
+      body {
+        margin: 0;
+        font-family: "BlexMono Nerd Font";
+        background-color: var(--rose-bg);
+        color: var(--rose-text);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      pre.ascii-art {
+        color: var(--rose-primary);
+        text-align: center;
+        margin-bottom: 6.5rem;
+      }
+
+      /* Search bar estilo Vim/TUI */
+      .search-container {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2rem;
+      }
+
+      .search-bar {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        border: 2px solid var(--rose-subtext);
+        border-right: none;
+        border-radius: 6px 0 0 6px;
+        background-color: var(--rose-bg);
+        color: var(--rose-text);
+        height: 15px;
+        outline: none;
+        width: 300px;
+      }
+
+      input::placeholder {
+        color: var(--rose-subtext);
+      }
+
+      .search-button {
+        padding: 0.5rem 1rem;
+        border: 2px solid var(--rose-subtext);
+        border-radius: 0 6px 6px 0;
+        background-color: var(--rose-bg);
+        color: var(--rose-primary);
+        cursor: pointer;
+        transition: 0.2s;
+      }
+
+      .search-button:hover {
+        color: var(--rose-accent);
+      }
+
+      .shortcuts {
+        display: flex;
+        gap: 2rem;
+        margin-top: 1rem;
+      }
+
+      .shortcut {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: var(--rose-text);
+        text-decoration: none;
+        font-size: 0.9rem;
+        transition: 0.2s;
+      }
+
+      .shortcut:hover {
+        color: var(--rose-primary);
+      }
+    </style>
+  </head>
+  <body>
+    <pre class="ascii-art">
+  ___        _       ____                          
+ / _ \ _   _| |_ ___| __ ) _ __ ___  ___  ___ _ __ 
+| | | | | | | __/ _ \  _ \| '__/ _ \/ __|/ _ \ '__|
+| |_| | |_| | ||  __/ |_) | | | (_) \__ \  __/ |   
+ \__\_\\__,_|\__\___|____/|_|  \___/|___/\___|_|   
+</pre
+    >
+
+    <div class="search-container">
+      <input
+        id="searchInput"
+        class="search-bar"
+        type="text"
+        placeholder="Pesquisar no DuckDuckGo..."
+        onkeydown="handleKey(event)"
+      />
+      <button class="search-button" onclick="searchDDG()">Pesquisar</button>
+    </div>
+
+    <div class="shortcuts">
+      <a class="shortcut" href="https://github.com" target="_blank">GitHub</a>
+      <a class="shortcut" href="https://chat.openai.com" target="_blank"
+        >ChatGPT</a
+      >
+      <a class="shortcut" href="https://www.claude.ai" target="_blank"
+        >Claude AI</a
+      >
+      <a class="shortcut" href="https://plus.diolinux.com.br" target="_blank"
+        >Diolinux+</a
+      >
+    </div>
+
+    <script>
+      const input = document.getElementById("searchInput");
+      const button = document.querySelector(".search-button");
+
+      // Foco automático ao carregar
+      window.onload = () => {
+        input.focus();
+      };
+
+      input.addEventListener("focus", () => {
+        input.style.borderColor = "var(--rose-primary)";
+        button.style.borderColor = "var(--rose-primary)";
+      });
+
+      input.addEventListener("blur", () => {
+        input.style.borderColor = "var(--rose-subtext)";
+        button.style.borderColor = "var(--rose-subtext)";
+      });
+
+      function searchDDG() {
+        const query = input.value;
+        if (query.trim() !== "") {
+          window.location.href =
+            "https://duckduckgo.com/?q=" + encodeURIComponent(query);
+        }
+      }
+
+      function handleKey(e) {
+        if (e.key === "Enter") searchDDG();
+      }
+    </script>
+  </body>
+</html>
