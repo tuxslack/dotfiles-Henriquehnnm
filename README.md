@@ -62,7 +62,10 @@ Here are some screenshots of my setup:
 
 - **starship.toml**  
   Configuration for [Starship](https://starship.rs/), a minimal and fast shell prompt.
-  
+ 
+- **qutebrowser/**
+  Configuration for [qutebrowser](https://qutebrowser.org)
+
 - **wallpapers/**
   My Wallpaper Collection
 
@@ -87,7 +90,7 @@ Here are some screenshots of my setup:
 - [Cava](https://github.com/karlstav/cava)
 - [Superfile](https://superfile.netlify.app/)
 - [Waybar](https://github.com/Alexays/Waybar)
-- [Firefox Developer Edition](https://www.firefox.com/en-US/channel/desktop/developer/) with [textfox](https://github.com/adriankarlen/textfox)
+- [Qutebrowser](https://qutebrowser.org)
 - [wlogout](https://github.com/ArtsyMacaw/wlogout)
 - [Lazygit](https://github.com/jesseduffield/lazygit)
 - [Konsole](https://konsole.kde.org/)
