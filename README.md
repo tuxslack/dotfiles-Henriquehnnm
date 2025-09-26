@@ -27,8 +27,8 @@ Here are some screenshots of my setup:
 - **Neovim**
   ![Neovim](public/nvim.png?1)
 
-- **Firefox**
-  ![firefox](public/firefox.png?1)
+- **Qutebrowser**
+  ![qute](public/qute.png?1)
 
 - **Terminal**
   ![Terminal](public/terminal.png?1)
