@@ -35,7 +35,6 @@
         margin-bottom: 6.5rem;
       }
 
-      /* Search bar estilo Vim/TUI */
       .search-container {
         display: flex;
         align-items: center;
@@ -110,7 +109,7 @@
         id="searchInput"
         class="search-bar"
         type="text"
-        placeholder="Pesquisar no DuckDuckGo..."
+        placeholder="Pesquisar ou digitar URL..."
         onkeydown="handleKey(event)"
       />
       <button class="search-button" onclick="searchDDG()">Pesquisar</button>
@@ -134,9 +133,7 @@
       const button = document.querySelector(".search-button");
 
       // Foco automático ao carregar
-      window.onload = () => {
-        input.focus();
-      };
+      window.onload = () => input.focus();
 
       input.addEventListener("focus", () => {
         input.style.borderColor = "var(--rose-primary)";
@@ -149,8 +146,19 @@
       });
 
       function searchDDG() {
-        const query = input.value;
-        if (query.trim() !== "") {
+        const query = input.value.trim();
+        if (query === "") return;
+
+        // Se for URL
+        if (
+          query.startsWith("http://") ||
+          query.startsWith("https://") ||
+          query.startsWith("www.")
+        ) {
+          const url = query.startsWith("http") ? query : "http://" + query;
+          window.location.href = url;
+        } else {
+          // Pesquisa normal
           window.location.href =
             "https://duckduckgo.com/?q=" + encodeURIComponent(query);
         }
