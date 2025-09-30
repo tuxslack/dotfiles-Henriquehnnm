@@ -13,8 +13,6 @@
   </a>
 </p>
 
----
-
 [🇧🇷 Leia em Português](README.pt_BR.md) | [🇪🇸 Leer en Español](README.es.md)
 
 ## ✨ About
