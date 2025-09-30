@@ -13,9 +13,9 @@
   </a>
 </p>
 
-<p align="center">
+<div align="center">
   [🇧🇷 Leia em Português](README.pt_BR.md) | [🇪🇸 Leer en Español](README.es.md)
-</p>
+</div>
 
 ---
 
