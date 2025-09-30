@@ -15,9 +15,9 @@
 
 ---
 
-## ✨ Sobre
+## ✨ About
 
-Este repositório reúne minha coleção pessoal de arquivos de configuração ("dotfiles") para Linux, otimizados para **Debian 13** usando a interface **KDE Plasma**, o editor **Neovim** com [LazyVim](https://www.lazyvim.org/), e diversos aplicativos e ferramentas modernas. O objetivo é criar um ambiente visualmente agradável, funcional e fácil de manter, com o tema [Catppuccin](https://catppuccin.com/) aplicado em todos os lugares possíveis.
+This repository gathers my personal collection of configuration files ("dotfiles") for Linux, optimized for **Debian 13** using the **KDE Plasma** interface, the **Neovim** editor with [LazyVim](https://www.lazyvim.org/), and themed with [Catppuccin](https://catppuccin.com/). Each configuration is tailored for minimalism, beauty, and high customization.
 
 ---
 
@@ -29,36 +29,36 @@ Este repositório reúne minha coleção pessoal de arquivos de configuração (
 
 ---
 
-## 🗂️ Estrutura do Repositório
+## 🗂️ Repository Structure
 
 ```
 .
-├── bat/           # Configuração do 'bat' (file viewer)
-├── cava/          # Configuração do 'cava' (visualizador de áudio)
-├── fish/          # Funções, aliases e configurações do shell Fish
-├── fonts/         # Fontes personalizadas
-├── konsole/       # Configuração do terminal Konsole
-├── lazygit/       # Configuração do Lazygit (UI para git)
-├── nvim/          # Setup completo do Neovim com LazyVim
-├── public/        # Imagens e outros assets públicos
-├── qutebrowser/   # Configuração do Qutebrowser
-├── scripts/       # Scripts pessoais úteis
-├── starship.toml  # Configuração do prompt Starship
-├── superfile/     # Config do file manager TUI Superfile
-├── wallpapers/    # Coleção de wallpapers
-├── waybar/        # Config do Waybar (barra de status)
-├── wlogout/       # Configuração do wlogout (menu de logout)
+├── bat/           # 'bat' file viewer configuration
+├── cava/          # 'cava' audio visualizer configuration
+├── fish/          # Fish shell functions, aliases, and config
+├── fonts/         # Custom fonts
+├── konsole/       # Konsole terminal configuration
+├── lazygit/       # Lazygit (git UI) configuration
+├── nvim/          # Full Neovim setup with LazyVim
+├── public/        # Public images and other assets
+├── qutebrowser/   # Qutebrowser configuration
+├── scripts/       # Useful personal scripts
+├── starship.toml  # Starship prompt configuration
+├── superfile/     # Superfile (TUI file manager) configuration
+├── wallpapers/    # Wallpaper collection
+├── waybar/        # Waybar (status bar) configuration
+├── wlogout/       # wlogout (logout menu) configuration
 └── LICENSE
 ```
 
 ---
 
-## 📦 Requisitos
+## 📦 Requirements
 
-- [Debian Linux](https://www.debian.org/) (recomendado)
+- [Debian Linux](https://www.debian.org/) (recommended)
 - [KDE Plasma](https://kde.org/plasma-desktop/)
 - [Fish Shell](https://fishshell.com/)
-- [Neovim](https://neovim.io/) **com [LazyVim](https://www.lazyvim.org/)**
+- [Neovim](https://neovim.io/) **with [LazyVim](https://www.lazyvim.org/)**
 - [Starship](https://starship.rs/)
 - [Bat](https://github.com/sharkdp/bat)
 - [Cava](https://github.com/karlstav/cava)
@@ -68,44 +68,44 @@ Este repositório reúne minha coleção pessoal de arquivos de configuração (
 - [wlogout](https://github.com/ArtsyMacaw/wlogout)
 - [Lazygit](https://github.com/jesseduffield/lazygit)
 - [Konsole](https://konsole.kde.org/)
-- [Krohnkite](https://github.com/esjeon/krohnkite) (tiling para KDE)
-- Fontes personalizadas (veja a pasta [`fonts`](./fonts))
-- Tema [Catppuccin](https://catppuccin.com/) (aplicado em todos os apps suportados)
+- [Krohnkite](https://github.com/esjeon/krohnkite) (tiling for KDE)
+- [Catppuccin theme](https://catppuccin.com/) (applied to all supported apps)
+- Custom fonts (see the [`fonts`](./fonts) folder)
 
 ---
 
-## 🚀 Instalação & Uso
+## 🚀 Installation & Usage
 
-1. **Clone o repositório:**
+1. **Clone the repository:**
    ```sh
    git clone https://github.com/Henriquehnnm/dotfiles.git
    ```
-2. **Faça backup dos seus arquivos de configuração atuais** antes de substituí-los.
-3. **Copie ou crie symlinks** dos arquivos/pastas desejados para o seu diretório `$HOME`.
+2. **Backup your current configuration files** before replacing them.
+3. **Copy or create symlinks** from the desired files/folders to your `$HOME` directory.
 
-   Exemplos:
+   Examples:
    ```sh
    cp -r nvim ~/.config/
    ln -s ~/dotfiles/fish ~/.config/fish
    ```
 
-4. **Instale os requisitos** de acordo com sua distro, e aplique as configurações conforme necessário.
+4. **Install the requirements** according to your distro, and apply the configurations as needed.
 
 ---
 
-## 💡 Dicas
+## 💡 Tips
 
-- Adapte os arquivos conforme suas preferências pessoais.
-- Recomendo revisar as configurações antes de sobrescrever as suas.
+- Adapt the files to your personal preferences.
+- I recommend reviewing the configs before overwriting your own.
 
 ---
 
-## 📝 Licença
+## 📝 License
 
-Distribuído sob a [GPLv3 License](./LICENSE).
+Distributed under the [GPLv3 License](./LICENSE).
 
 ---
 
 <p align="center">
-  <sub>Feito com ❤️ por <a href="https://github.com/Henriquehnnm">Henriquehnnm</a></sub>
+  <sub>Made with ❤️ by <a href="https://github.com/Henriquehnnm">Henriquehnnm</a></sub>
 </p>
