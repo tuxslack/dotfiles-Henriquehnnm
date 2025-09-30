@@ -1,19 +1,17 @@
 <p align="center">
-    <img src="https://github.com/rose-pine/rose-pine-theme/raw/main/assets/icon.png" width="80" />
+	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/logos/exports/1544x1544_circle.png" width="100" alt="Logo"/>
     <h2 align="center">dotfiles</h2>
 </p>
 
-<p align="center">All natural pine, faux fur and a bit of soho vibes for the classy minimalist</p>
-
 <p align="center">
-  <img alt="Debian" src="https://img.shields.io/badge/Debian-13-26233a?style=for-the-badge&logo=debian&logoColor=eb6f92&labelColor=191724"/>
+  <img alt="Debian" src="https://img.shields.io/badge/Debian-13-313244?style=for-the-badge&logo=debian&logoColor=f38ba8&labelColor=1e1e2e"/>
   
-  <img alt="KDE Plasma" src="https://img.shields.io/badge/KDE-Plasma-26233a?style=for-the-badge&logo=kde&logoColor=9ccfd8&labelColor=191724"/>
+  <img alt="KDE Plasma" src="https://img.shields.io/badge/KDE-Plasma-313244?style=for-the-badge&logo=kde&logoColor=89b4fa&labelColor=1e1e2e"/>
 
-  <img alt="Neovim" src="https://img.shields.io/badge/Neovim-26233a?style=for-the-badge&logo=neovim&logoColor=31748f&labelColor=191724"/>
+  <img alt="Neovim" src="https://img.shields.io/badge/Neovim-313244?style=for-the-badge&logo=neovim&logoColor=a6e3a1&labelColor=1e1e2e"/>
 
-  <a href="https://rosepinetheme.com/">
-    <img src="https://img.shields.io/badge/theme-rosé%20pine-26233a?labelColor=191724&logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUwIiBoZWlnaHQ9IjIzNyIgdmlld0JveD0iMCAwIDI1MCAyMzciIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0xNjEuMjI3IDE2MS4yNTFDMTMyLjE1NCAxNjkuMDQxIDExNC45MDEgMTk4LjkyNCAxMjIuNjkxIDIyNy45OTdDMTIzLjkyNSAyMzIuNjAzIDEyOC42NTkgMjM1LjMzNiAxMzMuMjY0IDIzNC4xMDJMMTg1LjkwNyAyMTkuOTk2QzIxOS41ODUgMjEwLjk3MiAyMzkuNTcgMTc2LjM1NCAyMzAuNTQ2IDE0Mi42NzdMMTYxLjIyNyAxNjEuMjUxWiIgZmlsbD0iIzI0NjI3QiIvPgo8cGF0aCBkPSJNODguMTgzNiAxNTkuOTg4QzExNy4yNTcgMTY3Ljc3OCAxMzQuNTEgMTk3LjY2MiAxMjYuNzIgMjI2LjczNUMxMjUuNDg2IDIzMS4zNCAxMjAuNzUyIDIzNC4wNzMgMTE2LjE0NyAyMzIuODM5TDYzLjUwNDEgMjE4LjczM0MyOS44MjY0IDIwOS43MSA5Ljg0MDk0IDE3NS4wOTIgMTguODY0OSAxNDEuNDE0TDg4LjE4MzYgMTU5Ljk4OFoiIGZpbGw9IiMyNDYyN0IiLz4KPHBhdGggZD0iTTE4Ni44NjcgMTcyLjk4QzE1Mi4wMDIgMTcyLjk4IDEyMy43MzcgMjAxLjI0NSAxMjMuNzM3IDIzNi4xMTFIMTg2Ljg3QzIyMS43MzYgMjM2LjExMSAyNTAgMjA3Ljg0NiAyNTAgMTcyLjk4TDE4Ni44NjcgMTcyLjk4WiIgZmlsbD0iIzMxNzQ4RiIvPgo8cGF0aCBkPSJNNjMuMTMyNyAxNzIuOThDOTcuOTk4NCAxNzIuOTggMTI2LjI2MyAyMDEuMjQ1IDEyNi4yNjMgMjM2LjExMUg2My4xM0MyOC4yNjQyIDIzNi4xMTEgLTEuNTI0MDNlLTA2IDIwNy44NDYgMCAxNzIuOThMNjMuMTMyNyAxNzIuOThaIiBmaWxsPSIjMzE3NDhGIi8+CjxwYXRoIGQ9Ik0xNzEuNzE3IDc1LjEyNjNDMTcxLjcxNyAxMDEuMjc2IDE1MC41MTggMTIyLjQ3NSAxMjQuMzY5IDEyMi40NzVDOTguMjE4OCAxMjIuNDc1IDc3LjAyMDIgMTAxLjI3NiA3Ny4wMjAyIDc1LjEyNjNDNzcuMDIwMiA0OC45NzY0IDk4LjIxODggMjcuNzc3OCAxMjQuMzY5IDI3Ljc3NzhDMTUwLjUxOCAyNy43Nzc4IDE3MS43MTcgNDguOTc2NCAxNzEuNzE3IDc1LjEyNjNaIiBmaWxsPSIjRUJCQ0JBIi8+CjxwYXRoIGQ9Ik0xNDQuMjE3IDg2LjIzNzlDMTYxLjY0OSA1Ni4wNDMyIDE1MS4zMDMgMTcuNDMyOSAxMjEuMTA4IDBMMTA2LjA2IDI2LjA2NDRDODguNjI3IDU2LjI1OSA5OC45NzM2IDk0Ljg2OTQgMTI5LjE2OCAxMTIuMzAyTDE0NC4yMTcgODYuMjM3OVoiIGZpbGw9IiNFQkJDQkEiLz4KPHBhdGggZD0iTTEyNS4yOTkgNjAuOTc4OUMxMTYuMjc1IDI3LjMwMTIgODEuNjU3NSA3LjMxNTY3IDQ3Ljk3OTcgMTYuMzM5Nkw2NC4zMTk3IDc3LjMyMTFDNzMuMzQzNiAxMTAuOTk5IDEwNy45NjEgMTMwLjk4NCAxNDEuNjM5IDEyMS45NkwxMjUuMjk5IDYwLjk3ODlaIiBmaWxsPSIjRUJCQ0JBIi8+CjxwYXRoIGQ9Ik0xMjQuOTI2IDYwLjk3ODlDMTMzLjk1IDI3LjMwMTIgMTY4LjU2NyA3LjMxNTY3IDIwMi4yNDUgMTYuMzM5NkwxODUuOTA1IDc3LjMyMTFDMTc2Ljg4MSAxMTAuOTk5IDE0Mi4yNjMgMTMwLjk4NCAxMDguNTg2IDEyMS45NkwxMjQuOTI2IDYwLjk3ODlaIiBmaWxsPSIjRUJCQ0JBIi8+Cjwvc3ZnPgo=&style=for-the-badge" />
+  <a href="https://catppuccin.com/">
+    <img src="https://img.shields.io/badge/theme-catppuccin-313244?style=for-the-badge&logo=catppuccin&logoColor=f5e0dc&labelColor=1e1e2e"/>
   </a>
 </p>
 
@@ -96,6 +94,7 @@ Here are some screenshots of my setup:
 - [Konsole](https://konsole.kde.org/)
 - [Krohnkite](https://github.com/esjeon/krohnkite)
 - Custom fonts (see the [`fonts`](./fonts) folder)
+- [Catppuccin](https://catppuccin.com/) theme (applied wherever possible)
 
 ## How to Use
 
