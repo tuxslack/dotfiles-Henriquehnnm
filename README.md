@@ -13,7 +13,10 @@
   </a>
 </p>
 
-[🇧🇷 Leia em Português](README.pt_BR.md) | [🇪🇸 Leer en Español](README.es.md)
+<p align="center">
+  <a href="README.pt_BR.md">🇧🇷 Leia em Português</a> |
+  <a href="README.es.md">🇪🇸 Leer en Español</a>
+</p>
 
 ---
 
