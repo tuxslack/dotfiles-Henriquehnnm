@@ -1,28 +1,28 @@
-@define-color base #191724;
-@define-color surface #1f1d2e;
+@define-color base #1e1e2e;
+@define-color surface #1a1826;
 @define-color overlay #26233a;
-@define-color muted #6e6a86;
+@define-color muted #6c7086;
 @define-color subtle #908caa;
-@define-color text #e0def4;
-@define-color love #eb6f92;
-@define-color gold #f6c177;
-@define-color rose #ebbcba;
-@define-color pine #31748f;
-@define-color foam #9ccfd8;
-@define-color iris #c4a7e7;
-@define-color highlightLow #21202e;
-@define-color highlightMed #403d52;
-@define-color highlightHigh #524f67;
+@define-color text #cdd6f4;
+@define-color love #f38ba8;
+@define-color gold #f9e2af;
+@define-color rose #f5c2e7;
+@define-color pine #89b4fa;
+@define-color foam #94e2d5;
+@define-color iris #cba6f7;
+@define-color highlightLow #1f1d2e;
+@define-color highlightMed #454158;
+@define-color highlightHigh #585b70;
 
 * {
-  font-family: "JetBrainsMono Nerd Font", FontAwesome, sans-serif;
+  font-family: "BlexMono Nerd Font", FontAwesome, sans-serif;
   background-image: none;
   transition: 20ms;
   box-shadow: none;
 }
 
 window {
-  background-color: rgba(25, 23, 36, 0.9);
+  background-color: rgba(30, 30, 46, 0.9);
   font-size: 0px;
   color: @text;
 }

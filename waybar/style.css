@@ -1,6 +1,6 @@
 /*
  * =================================================================
- * Rosé Pine for Waybar
+ * Catppuccin for Waybar
  * =================================================================
  */
 
@@ -18,16 +18,16 @@
 /* --- A Janela Principal da Waybar --- */
 window#waybar {
   background: transparent; /* Fundo transparente para um visual flutuante */
-  color: #e0def4; /* Cor do texto padrão (Text) */
+  color: #cdd6f4; /* Cor do texto padrão (Text) */
   transition-property: background-color;
   transition-duration: 0.5s;
 }
 
 /* --- Dica de Ferramenta (Tooltip) --- */
 tooltip {
-  background: #1f1d2e; /* Surface */
+  background: #1e1e2e; /* Surface */
   border-radius: 10px;
-  border: 2px solid #c4a7e7; /* Iris */
+  border: 2px solid #f5c2e7; /* Pink */
 }
 
 /* --- Estilo Geral dos Módulos --- */
@@ -40,12 +40,12 @@ tooltip {
 #custom-power,
 #custom-kde-desktop,
 #custom-debian-logo {
-background-color: #1f1d2e; /* Surface */
-padding: 4px 14px;
-margin: 4px 5px;
-border-radius: 10px;
-border: 1px solid #26233a; /* Overlay */
-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  background-color: #1e1e2e; /* Surface */
+  padding: 4px 14px;
+  margin: 4px 5px;
+  border-radius: 10px;
+  border: 1px solid #313244; /* Overlay */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 /* --- Efeito Hover --- */
@@ -55,68 +55,67 @@ box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 #keyboard-state:hover,
 #custom-wifi:hover,
 #clock:hover #custom-debian-logo {
-background-color: #403d52; /* Highlight Med */
-border: 1px solid #c4a7e7; /* Iris */
+  background-color: #313244; /* Highlight */
+  border: 1px solid #f5c2e7; /* Pink */
 }
 
 /*
  * =================================================================
- * Cores dos Ícones (Paleta Rosé Pine)
+ * Cores dos Ícones (Paleta Catppuccin)
  * =================================================================
  */
 
 /* --- KDE Workspaces --- */
 #custom-kde-desktop {
-background-color: #1f1d2e; /* Surface */
-padding: 2px 12px;
-margin: 4px 5px;
-border-radius: 10px;
-border: 1px solid #26233a; /* Overlay */
-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-color: #e0def4; /* Cor padrão dos números */
+  background-color: #1e1e2e; /* Surface */
+  padding: 2px 12px;
+  margin: 4px 5px;
+  border-radius: 10px;
+  border: 1px solid #313244; /* Overlay */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  color: #cdd6f4; /* Cor padrão dos números */
 }
 
 /* Desktop ativo */
 #custom-kde-desktop span {
-color: #31748f; /* Pine */
-font-weight: bold;
+  color: #89b4fa; /* Blue */
+  font-weight: bold;
 }
 #pulseaudio {
-color: #9ccfd8; /* Foam */
+  color: #b5e8e0; /* Teal */
 }
 
 #backlight {
-color: #f6c177; /* Gold */
+  color: #f9e2af; /* Yellow */
 }
 
 #keyboard-state {
-color: #ebbcba; /* Rose */
+  color: #f5c2e7; /* Pink */
 }
 
 #custom-wifi {
-color: #c4a7e7; /* Iris */
+  color: #f2cdcd; /* Mauve */
 }
 
 #clock {
-color: #e0def4; /* Text */
+  color: #cdd6f4; /* Text */
 }
 
 #custom-power {
-color: #eb6f92; /* Love */
-margin-right: 10px;
-/* CORREÇÃO: Alterado para arredondar todos os cantos */
-border-radius: 10px;
+  color: #f38ba8; /* Red */
+  margin-right: 10px;
+  border-radius: 10px;
 }
 
 /* --- Estados Específicos --- */
 #pulseaudio.muted {
-color: #6e6a86; /* Muted */
+  color: #585b70; /* Muted */
 }
 
 #keyboard-state.locked {
-color: #eb6f92; /* Love */
+  color: #f38ba8; /* Red */
 }
 
 #custom-debian-logo {
-color: #eb6f92;
+  color: #f38ba8;
 }

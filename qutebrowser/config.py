@@ -3,9 +3,15 @@
 # Carregar a configuração automática
 config.load_autoconfig()
 
-# Importar e configurar o tema Rose Pine
-import rosepine
-rosepine.setup(c, 'rose-pine', True)
+import catppuccin
+
+# load your autoconfig, use this, if the rest of your config is empty!
+config.load_autoconfig()
+
+# set the flavor you'd like to use
+# valid options are 'mocha', 'macchiato', 'frappe', and 'latte'
+# last argument (optional, default is False): enable the plain look for the menu rows
+catppuccin.setup(c, 'mocha', True)
 
 # Configurações de abas
 c.tabs.padding = {"top": 4, "bottom": 4, "left": 8, "right": 8}  # Espaçamento interno das abas

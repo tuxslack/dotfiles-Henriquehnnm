@@ -29,7 +29,7 @@ for i in $(seq 1 $COUNT); do
   if [ "$i" -eq "$CURRENT" ]; then
     # Aplica a formatação Pango para destacar a área atual.
     # A cor '31748f' é um tom de azul escuro.
-    KANJI="<span foreground='#31748f' weight='bold'>$KANJI</span>"
+    KANJI="<span foreground='#cba6f7' weight='bold'>$KANJI</span>"
   fi
 
   # Concatena o número formatado à string final.

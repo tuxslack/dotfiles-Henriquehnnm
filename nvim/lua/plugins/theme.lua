@@ -1,16 +1,19 @@
 return {
-  "rose-pine/neovim",
-  name = "rose-pine",
+  "catppuccin/nvim",
+  name = "catppuccin",
   lazy = false,
   priority = 1000,
   config = function()
-  -- Carrega o tema de cores Rosé Pine
-  vim.cmd("colorscheme rose-pine")
+    -- Ativa o tema Catppuccin Mocha
+    vim.cmd("colorscheme catppuccin-mocha")
 
-  -- Habilita o destaque da linha do cursor
-  vim.opt.cursorline = true
+    -- Define o fundo geral do editor
+    vim.cmd("highlight Normal guibg=#181825")
 
-  -- Remove o destaque do texto da linha, mantendo-o apenas no gutter
-  vim.cmd("highlight CursorLine guibg=NONE")
+    -- Habilita o destaque da linha do cursor
+    vim.opt.cursorline = true
+
+    -- Remove o fundo do destaque da linha, mantendo só o gutter
+    vim.cmd("highlight CursorLine guibg=NONE")
   end,
 }
