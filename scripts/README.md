@@ -1,50 +1,43 @@
-# Scripts
+# scripts
 
-This directory contains personal utilities and helper tools used in my Linux setup. They make tasks like viewing ANSI colors in the terminal, cloning repositories, and playing Lo-fi music via TUI easier. Below you’ll find a description of each script:
+This directory contains personal scripts and utilities to improve productivity, automation, and fun in your Linux environment. Each script serves a specific purpose and can be adapted to your workflow.
 
-## scripts/colors.sh
+## Contents
 
-Displays examples of basic, bright, and background ANSI colors directly in the terminal.  
-**Usage:**  
-```sh
-bash colors.sh
-```
+- **.music.json**  
+  Playlist configuration for `lofi.py` (see below).
 
-## scripts/repos.sh
+- **colors.sh**  
+  Shows ANSI color codes in your terminal for quick reference.  
+  _Usage:_ `bash colors.sh`
 
-Clone multiple public GitHub repositories from a user using GitHub CLI and the interactive Gum tool.  
-- Requires: [gh](https://cli.github.com/), [gum](https://github.com/charmbracelet/gum), [jq](https://stedolan.github.io/jq/)  
-**Usage:**  
-```sh
-bash repos.sh
-```
+- **commits.sh**  
+  Suggests a Conventional Commit message based on the staged changes in your git repository.  
+  _Usage:_  
+  1. Stage your changes with `git add ...`
+  2. Run: `bash commits.sh`
 
-## scripts/lofi.py
+- **lofi.py**  
+  A TUI (terminal user interface) music player for Lo-fi tracks from YouTube, using [mpv](https://mpv.io/).  
+  _Usage:_ `python3 lofi.py`  
+  _Controls:_ `j`/`k` to navigate, `Enter` to play, `p` to pause/resume, `q` to quit.
 
-Interactive text-based interface to play Lo-fi music from YouTube (audio only), using [mpv](https://mpv.io/) and a `.music.json` file to manage the playlist.  
-- Requires: Python 3, [mpv](https://mpv.io/), curses (included), socket, uuid  
-**Usage:**  
-```sh
-python3 lofi.py
-```
-- Navigation: `j` (down), `k` (up), `Enter` (play), `p` (pause/resume), `q` (quit).
+- **qrcode.sh**  
+  Generates and displays a QR code in your terminal from any text or URL (requires `qrencode`).  
+  _Usage:_ `bash qrcode.sh "your text or URL"`
 
-## scripts/.music.json
+- **repos.sh**  
+  Interactively clone multiple public GitHub repositories from any user (needs `gh`, `gum`, and `jq`).  
+  _Usage:_ `bash repos.sh`
 
-Configuration file for `lofi.py`, containing a list of Lo-fi music tracks from YouTube.  
-Example entry:
-```json
-[
-  {
-    "title": "Diolinux Lo-fi",
-    "url": "https://www.youtube.com/watch?v=NT3Zcjl4-ts"
-  }
-]
-```
+- **README.md**  
+  This file! An overview and usage guide for all scripts in this directory.
 
 ---
 
-**Tip:**  
-Feel free to modify, adapt, or add new scripts as needed.  
-For questions or suggestions, open an Issue or Pull Request.
+## Tips
+
+- Feel free to modify, expand, or replace any script to suit your needs.
+- Check script headers for prerequisites (some require extra packages).
+- For questions or suggestions, open an Issue or Pull Request in the main repository.
 
