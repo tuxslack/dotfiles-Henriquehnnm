@@ -1,4 +1,4 @@
-- [lsd](https://github.com/lsd-rs/lsd)<p align="center">
+<p align="center">
   <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/logos/exports/1544x1544_circle.png" width="100" alt="Logo Catppuccin"/>
   <h2 align="center">Dotfiles</h2>
   <p align="center"><em>Configuração Linux minimalista, bonita e altamente personalizada</em></p>
@@ -26,30 +26,6 @@ Este repositório reúne minha coleção pessoal de arquivos de configuração (
 | Área de Trabalho | Neovim | Qutebrowser | Terminal |
 |:---:|:---:|:---:|:---:|
 | ![Desktop](public/desktop.png?1) | ![Neovim](public/nvim.png?1) | ![qute](public/qute.png?1) | ![Terminal](public/terminal.png?1) |
-
----
-
-## 🗂️ Estrutura do Repositório
-
-```
-.
-├── bat/           # Configuração do visualizador de arquivos 'bat'
-├── cava/          # Configuração do visualizador de áudio 'cava'
-├── fish/          # Funções, aliases e configurações do shell Fish
-├── fonts/         # Fontes personalizadas
-├── konsole/       # Configuração do terminal Konsole
-├── lazygit/       # Configuração do Lazygit (UI para git)
-├── nvim/          # Configuração completa do Neovim com LazyVim
-├── public/        # Imagens públicas e outros assets
-├── qutebrowser/   # Configuração do Qutebrowser
-├── scripts/       # Scripts pessoais úteis
-├── starship.toml  # Configuração do prompt Starship
-├── superfile/     # Configuração do Superfile (gerenciador de arquivos TUI)
-├── wallpapers/    # Coleção de wallpapers
-├── waybar/        # Configuração da barra de status Waybar
-├── wlogout/       # Configuração do menu de logout wlogout
-└── LICENSE
-```
 
 ---
 
