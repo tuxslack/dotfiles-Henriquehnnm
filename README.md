@@ -34,30 +34,6 @@ This repository gathers my personal collection of configuration files ("dotfiles
 
 ---
 
-## 🗂️ Repository Structure
-
-```
-.
-├── bat/           # 'bat' file viewer configuration
-├── cava/          # 'cava' audio visualizer configuration
-├── fish/          # Fish shell functions, aliases, and config
-├── fonts/         # Custom fonts
-├── konsole/       # Konsole terminal configuration
-├── lazygit/       # Lazygit (git UI) configuration
-├── nvim/          # Full Neovim setup with LazyVim
-├── public/        # Public images and other assets
-├── qutebrowser/   # Qutebrowser configuration
-├── scripts/       # Useful personal scripts
-├── starship.toml  # Starship prompt configuration
-├── superfile/     # Superfile (TUI file manager) configuration
-├── wallpapers/    # Wallpaper collection
-├── waybar/        # Waybar (status bar) configuration
-├── wlogout/       # wlogout (logout menu) configuration
-└── LICENSE
-```
-
----
-
 ## 📦 Requirements
 
 - [Debian Linux](https://www.debian.org/) (recommended)
@@ -67,6 +43,7 @@ This repository gathers my personal collection of configuration files ("dotfiles
 - [Starship](https://starship.rs/)
 - [Bat](https://github.com/sharkdp/bat)
 - [Cava](https://github.com/karlstav/cava)
+- [lsd](https://github.com/lsd-rs/lsd)
 - [Superfile](https://superfile.netlify.app/)
 - [Waybar](https://github.com/Alexays/Waybar)
 - [Qutebrowser](https://qutebrowser.org)
