@@ -26,6 +26,10 @@ This directory contains personal scripts and utilities to improve productivity, 
   Generates and displays a QR code in your terminal from any text or URL (requires `qrencode`).  
   _Usage:_ `bash qrcode.sh "your text or URL"`
 
+- **logo.sh**
+  An amazing debian logo!
+  _Usage:_ `bash logo.sh`
+
 - **repos.sh**  
   Interactively clone multiple public GitHub repositories from any user (needs `gh`, `gum`, and `jq`).  
   _Usage:_ `bash repos.sh`
