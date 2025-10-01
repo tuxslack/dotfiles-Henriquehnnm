@@ -29,30 +29,6 @@ Este repositorio reúne mi colección personal de archivos de configuración ("d
 
 ---
 
-## 🗂️ Estructura del Repositorio
-
-```
-.
-├── bat/           # Configuración del visor de archivos 'bat'
-├── cava/          # Configuración del visualizador de audio 'cava'
-├── fish/          # Funciones, alias y configuración de Fish Shell
-├── fonts/         # Fuentes personalizadas
-├── konsole/       # Configuración del terminal Konsole
-├── lazygit/       # Configuración de Lazygit (UI para git)
-├── nvim/          # Configuración completa de Neovim con LazyVim
-├── public/        # Imágenes públicas y otros recursos
-├── qutebrowser/   # Configuración de Qutebrowser
-├── scripts/       # Scripts personales útiles
-├── starship.toml  # Configuración del prompt Starship
-├── superfile/     # Configuración de Superfile (gestor de archivos TUI)
-├── wallpapers/    # Colección de fondos de pantalla
-├── waybar/        # Configuración de la barra de estado Waybar
-├── wlogout/       # Configuración del menú de cierre de sesión wlogout
-└── LICENSE
-```
-
----
-
 ## 📦 Requerimientos
 
 - [Debian Linux](https://www.debian.org/) (recomendado)
@@ -62,6 +38,7 @@ Este repositorio reúne mi colección personal de archivos de configuración ("d
 - [Starship](https://starship.rs/)
 - [Bat](https://github.com/sharkdp/bat)
 - [Cava](https://github.com/karlstav/cava)
+- [lsd](https://github.com/lsd-rs/lsd)
 - [Superfile](https://superfile.netlify.app/)
 - [Waybar](https://github.com/Alexays/Waybar)
 - [Qutebrowser](https://qutebrowser.org)
