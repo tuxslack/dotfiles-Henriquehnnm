@@ -1,4 +1,4 @@
-<p align="center">
+- [lsd](https://github.com/lsd-rs/lsd)<p align="center">
   <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/logos/exports/1544x1544_circle.png" width="100" alt="Logo Catppuccin"/>
   <h2 align="center">Dotfiles</h2>
   <p align="center"><em>Configuração Linux minimalista, bonita e altamente personalizada</em></p>
@@ -62,6 +62,7 @@ Este repositório reúne minha coleção pessoal de arquivos de configuração (
 - [Starship](https://starship.rs/)
 - [Bat](https://github.com/sharkdp/bat)
 - [Cava](https://github.com/karlstav/cava)
+- [lsd](https://github.com/lsd-rs/lsd)
 - [Superfile](https://superfile.netlify.app/)
 - [Waybar](https://github.com/Alexays/Waybar)
 - [Qutebrowser](https://qutebrowser.org)
