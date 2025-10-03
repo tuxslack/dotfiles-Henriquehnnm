@@ -52,7 +52,7 @@ install_packages() {
 
   # --- Debian/Ubuntu (apt) ---
   sudo apt update && sudo apt install -y \
-    bat cava fish lazygit lsd neovim qutebrowser starship waybar wlogout \
+    bat cava fish lazygit lsd neovim qutebrowser starship gum waybar wlogout \
     nmap qrencode jq curl unzip mpv python3 fonts-firacode
 
   # --- Arch Linux (pacman) ---
@@ -118,12 +118,27 @@ copy_configs() {
 # Instalação dos Scripts
 # ------------------------------------------------------
 install_scripts() {
-  echo -e "${YELLOW}[*] Instalando scripts em $LOCAL_BIN_DIR...${NC}"
+  echo -e "${YELLOW}[*] Instalando scripts...${NC}"
+
+  # Casos especiais: lofi.py e .music.json na home
+  cp -f "$DOTFILES_DIR/scripts/lofi.py" "$HOME/.lofi.py"
+  echo -e "    -> Copiado ${BLUE}lofi.py${NC} para ${HOME}/.lofi.py"
+  cp -f "$DOTFILES_DIR/scripts/.music.json" "$HOME/.music.json"
+  echo -e "    -> Copiado ${BLUE}.music.json${NC} para ${HOME}/.music.json"
+
+  # Instalação dos outros scripts em .local/bin
+  echo -e "${YELLOW}[*] Instalando scripts restantes em $LOCAL_BIN_DIR...${NC}"
   mkdir -p "$LOCAL_BIN_DIR"
 
   for script in "$DOTFILES_DIR/scripts/"*; do
+    local script_name=$(basename "$script")
+
+    # Pula os arquivos já tratados
+    if [[ "$script_name" == "lofi.py" || "$script_name" == ".music.json" ]]; then
+      continue
+    fi
+
     if [ -f "$script" ]; then
-      local script_name=$(basename "$script")
       local dest_path="$LOCAL_BIN_DIR/$script_name"
       ln -sf "$script" "$dest_path"
       chmod +x "$dest_path"
