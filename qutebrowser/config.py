@@ -44,3 +44,11 @@ c.fonts.default_family = ['BlexMono Nerd Font', 'monospace']
 c.fonts.tabs.selected = 'bold 10pt BlexMono Nerd Font'
 c.fonts.tabs.unselected = '12pt BlexMono Nerd Font'
 c.fonts.web.family.standard = 'BlexMono Nerd Font, monospace'
+
+import os
+
+# Definir a página inicial e de início
+startpage_path = os.path.expanduser("~/.startpage.html")
+c.url.default_page = f"file://{startpage_path}"
+c.url.start_pages = [f"file://{startpage_path}"]
+
