@@ -253,9 +253,9 @@ def setup(c, flavour, samecolorrows = False):
     c.colors.statusbar.caret.selection.bg = palette["mantle"]
 
     ## Background color of the progress bar.
-    c.colors.statusbar.progress.bg = palette["mantle"]
+    c.colors.statusbar.progress.bg = palette["mauve"]
     ## Background color of the statusbar in passthrough mode.
-    c.colors.statusbar.passthrough.bg = palette["mantle"]
+    c.colors.statusbar.passthrough.bg = palette["mauve"]
 
     ## Foreground color of the statusbar.
     c.colors.statusbar.normal.fg = palette["text"]
