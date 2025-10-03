@@ -58,6 +58,18 @@ This repository gathers my personal collection of configuration files ("dotfiles
 
 ## 🚀 Installation & Usage
 
+### Automatic Installation (Recommended)
+> **Warning**
+> The script will automatically replace any conflicting configuration files. Please back up your data before proceeding.
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/Henriquehnnm/dotfiles.git && cd dotfiles
+   ```
+2. **Run the installer:**
+   ```sh
+   ./install.sh
+   ```
+### Manual Installation
 1. **Clone the repository:**
    ```sh
    git clone https://github.com/Henriquehnnm/dotfiles.git
