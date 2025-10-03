@@ -3,6 +3,7 @@ ColorScheme=catppuccin-mocha
 Font=BlexMono Nerd Font,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 
 [General]
+AlternatingBars=0
 Name=Broly
 Parent=FALLBACK/
 
