@@ -14,6 +14,7 @@
 </p>
 
 <p align="center">
+  <a href="README.md">🇬🇧 Read in English</a> | 
   <a href="README.pt_BR.md">🇧🇷 Leia em Português</a> |
   <a href="README.es.md">🇪🇸 Leer en Español</a>
 </p>
@@ -36,6 +37,9 @@ This repository gathers my personal collection of configuration files ("dotfiles
 
 ## 📦 Requirements
 
+<details>
+  <summary>Click to see the list of requirements</summary>
+
 - [Debian Linux](https://www.debian.org/) (recommended)
 - [KDE Plasma](https://kde.org/plasma-desktop/)
 - [Fish Shell](https://fishshell.com/)
@@ -53,6 +57,8 @@ This repository gathers my personal collection of configuration files ("dotfiles
 - [Krohnkite](https://github.com/esjeon/krohnkite) (tiling for KDE)
 - [Catppuccin theme](https://catppuccin.com/) (applied to all supported apps)
 - Custom fonts (see the [`fonts`](./fonts) folder)
+
+</details>
 
 ---
 

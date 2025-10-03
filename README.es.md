@@ -13,11 +13,17 @@
   </a>
 </p>
 
+<p align="center">
+  <a href="README.md">🇬🇧 Read in English</a> | 
+  <a href="README.pt_BR.md">🇧🇷 Leia em Português</a> |
+  <a href="README.es.md">🇪🇸 Leer en Español</a>
+</p>
+
 ---
 
 ## ✨ Acerca de
 
-Este repositorio reúne mi colección personal de archivos de configuración ("dotfiles") para Linux, optimizados para **Debian 13** usando la interfaz **KDE Plasma**, el editor **Neovim** con [LazyVim](https://www.lazyvim.org/) y varios otros programas.
+Este repositorio reúne mi colección personal de archivos de configuración ("dotfiles") para Linux, optimizados para **Debian 13** usando la interfaz **KDE Plasma**, el editor **Neovim** con [LazyVim](https://www.lazyvim.org/) y tematizados con [Catppuccin](https://catppuccin.com/). Cada configuración está diseñada para ser minimalista, hermosa y altamente personalizada.
 
 ---
 
@@ -30,6 +36,9 @@ Este repositorio reúne mi colección personal de archivos de configuración ("d
 ---
 
 ## 📦 Requerimientos
+
+<details>
+  <summary>Haz clic para ver la lista de requerimientos</summary>
 
 - [Debian Linux](https://www.debian.org/) (recomendado)
 - [KDE Plasma](https://kde.org/plasma-desktop/)
@@ -48,6 +57,8 @@ Este repositorio reúne mi colección personal de archivos de configuración ("d
 - [Krohnkite](https://github.com/esjeon/krohnkite) (tiling para KDE)
 - [Tema Catppuccin](https://catppuccin.com/) (aplicado en todas las aplicaciones compatibles)
 - Fuentes personalizadas (ver la carpeta [`fonts`](./fonts))
+
+</details>
 
 ---
 
