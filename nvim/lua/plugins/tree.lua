@@ -20,15 +20,11 @@ return {
 							".cache",
 						},
 					},
-				},
+											root_name_modifier = ":t",				},
 				window = {
 					position = "left",
 					width = 30,
-				},
-				default_component_configs = {
-					border = {
-						style = "none",
-					},
+					border_style = "none",
 				},
 			})
 
