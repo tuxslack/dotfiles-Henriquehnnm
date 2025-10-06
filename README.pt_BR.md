@@ -102,7 +102,7 @@ Este repositório reúne minha coleção pessoal de arquivos de configuração (
 
 ## 📝 Licença
 
-Distribuído sob a [Licença GPLv3](./LICENSE).
+Distribuído sob a [Licença MIT](./LICENSE).
 
 ---
 

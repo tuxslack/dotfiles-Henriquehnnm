@@ -102,7 +102,7 @@ This repository gathers my personal collection of configuration files ("dotfiles
 
 ## 📝 License
 
-Distributed under the [GPLv3 License](./LICENSE).
+Distributed under the [MIT License](./LICENSE).
 
 ---
 
