@@ -100,9 +100,16 @@ Este repositório reúne minha coleção pessoal de arquivos de configuração (
 
 ---
 
+## 👥 Pessoas
+
+- **Feito por:** [Henriquehnnm](https://github.com/Henriquehnnm)
+- **Agradecimentos a:** [tuxslack](https://github.com/tuxslack)
+
+---
+
 ## 📝 Licença
 
-Distribuído sob a [Licença MIT](./LICENSE).
+Distribuído sob a [Licença GPLv3](./LICENSE).
 
 ---
 

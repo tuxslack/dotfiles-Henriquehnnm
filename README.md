@@ -100,9 +100,16 @@ This repository gathers my personal collection of configuration files ("dotfiles
 
 ---
 
+## 👥 People
+
+- **Made by:** [Henriquehnnm](https://github.com/Henriquehnnm)
+- **Thanks to:** [tuxslack](https://github.com/tuxslack)
+
+---
+
 ## 📝 License
 
-Distributed under the [MIT License](./LICENSE).
+Distributed under the [GPLv3 License](./LICENSE).
 
 ---
 

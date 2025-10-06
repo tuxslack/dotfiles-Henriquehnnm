@@ -126,6 +126,15 @@ install_scripts() {
   cp -f "$DOTFILES_DIR/scripts/.music.json" "$HOME/.music.json"
   echo -e "    -> Copiado ${BLUE}.music.json${NC} para ${HOME}/.music.json"
 
+  # Download de scripts externos
+  echo -e "${YELLOW}[*] Baixando scripts externos para a home...${NC}"
+  curl -sL "https://github.com/Henriquehnnm/HydroFetch/raw/refs/heads/main/Fetch-scripts/hydrofetch.sh" -o "$HOME/.hydrofetch.sh"
+  echo -e "    -> Baixado ${BLUE}hydrofetch.sh${NC} para ${HOME}/.hydrofetch.sh"
+  curl -sL "https://github.com/Henriquehnnm/HydroTop/raw/refs/heads/main/hydrotop.py" -o "$HOME/.hydrotop.py"
+  echo -e "    -> Baixado ${BLUE}hydrotop.py${NC} para ${HOME}/.hydrotop.py"
+  curl -sL "https://github.com/Henriquehnnm/HydroToDo/raw/refs/heads/main/hydrotodo.py" -o "$HOME/.hydrotodo.py"
+  echo -e "    -> Baixado ${BLUE}hydrotodo.py${NC} para ${HOME}/.hydrotodo.py"
+
   # Instalação dos outros scripts em .local/bin
   echo -e "${YELLOW}[*] Instalando scripts restantes em $LOCAL_BIN_DIR...${NC}"
   mkdir -p "$LOCAL_BIN_DIR"
