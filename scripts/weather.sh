@@ -8,7 +8,7 @@
 # Atualização em:  https://github.com/tuxslack/dotfiles-Henriquehnnm
 # Script:          weather.sh
 # Versão:          0.2
-# Licença:         MIT
+# Licença:         GPLv3
 #
 # Descrição: 
 #
