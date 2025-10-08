@@ -143,15 +143,11 @@ install_scripts() {
   echo -e "${YELLOW}[*] Instalando scripts restantes em $LOCAL_BIN_DIR...${NC}"
   mkdir -p "$LOCAL_BIN_DIR"
 
-  for script in "$DOTFILES_DIR/scripts/"*; do
-    local script_name=$(basename "$script")
-
-    # Pula os arquivos já tratados
-    if [[ "$script_name" == "lofi.py" || "$script_name" == ".music.json" ]]; then
-      continue
-    fi
-
+  # Instala os scripts .sh, removendo a extensão no destino
+  for script in "$DOTFILES_DIR/scripts/"*.sh; do
     if [ -f "$script" ]; then
+      local script_name
+      script_name=$(basename "$script" .sh)
       local dest_path="$LOCAL_BIN_DIR/$script_name"
       ln -sf "$script" "$dest_path"
       chmod +x "$dest_path"
