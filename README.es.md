@@ -29,9 +29,12 @@ Este repositorio reúne mi colección personal de archivos de configuración ("d
 
 ## 🖼️ Capturas de Pantalla
 
-| Escritorio | Neovim | Qutebrowser | Terminal |
-|:---:|:---:|:---:|:---:|
-| ![Desktop](public/desktop.png?1) | ![Neovim](public/nvim.png?1) | ![qute](public/qute.png?1) | ![Terminal](public/terminal.png?1) |
+<p align="center">
+  <img src="public/desktop.png?1" width="49%">
+  <img src="public/nvim.png?1" width="49%">
+  <img src="public/qute.png?1" width="49%">
+  <img src="public/terminal.png?1" width="49%">
+</p>
 
 ---
 
@@ -47,6 +50,7 @@ Este repositorio reúne mi colección personal de archivos de configuración ("d
 - [Starship](https://starship.rs/)
 - [Bat](https://github.com/sharkdp/bat)
 - [Cava](https://github.com/karlstav/cava)
+- [Dunst](https://dunst-project.org/)
 - [lsd](https://github.com/lsd-rs/lsd)
 - [Superfile](https://superfile.netlify.app/)
 - [Waybar](https://github.com/Alexays/Waybar)
@@ -54,6 +58,7 @@ Este repositorio reúne mi colección personal de archivos de configuración ("d
 - [wlogout](https://github.com/ArtsyMacaw/wlogout)
 - [Lazygit](https://github.com/jesseduffield/lazygit)
 - [Konsole](https://konsole.kde.org/)
+- Esquemas de color de KDE Plasma
 - [Krohnkite](https://github.com/esjeon/krohnkite) (tiling para KDE)
 - [Tema Catppuccin](https://catppuccin.com/) (aplicado en todas las aplicaciones compatibles)
 - Fuentes personalizadas (ver la carpeta [`fonts`](./fonts))

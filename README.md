@@ -29,9 +29,12 @@ This repository gathers my personal collection of configuration files ("dotfiles
 
 ## 🖼️ Screenshots
 
-| Desktop | Neovim | Qutebrowser | Terminal |
-|:---:|:---:|:---:|:---:|
-| ![Desktop](public/desktop.png?1) | ![Neovim](public/nvim.png?1) | ![qute](public/qute.png?1) | ![Terminal](public/terminal.png?1) |
+<p align="center">
+  <img src="public/desktop.png?1" width="49%">
+  <img src="public/nvim.png?1" width="49%">
+  <img src="public/qute.png?1" width="49%">
+  <img src="public/terminal.png?1" width="49%">
+</p>
 
 ---
 
@@ -47,6 +50,7 @@ This repository gathers my personal collection of configuration files ("dotfiles
 - [Starship](https://starship.rs/)
 - [Bat](https://github.com/sharkdp/bat)
 - [Cava](https://github.com/karlstav/cava)
+- [Dunst](https://dunst-project.org/)
 - [lsd](https://github.com/lsd-rs/lsd)
 - [Superfile](https://superfile.netlify.app/)
 - [Waybar](https://github.com/Alexays/Waybar)
@@ -54,6 +58,7 @@ This repository gathers my personal collection of configuration files ("dotfiles
 - [wlogout](https://github.com/ArtsyMacaw/wlogout)
 - [Lazygit](https://github.com/jesseduffield/lazygit)
 - [Konsole](https://konsole.kde.org/)
+- KDE Plasma Color Schemes
 - [Krohnkite](https://github.com/esjeon/krohnkite) (tiling for KDE)
 - [Catppuccin theme](https://catppuccin.com/) (applied to all supported apps)
 - Custom fonts (see the [`fonts`](./fonts) folder)

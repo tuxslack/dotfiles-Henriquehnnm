@@ -18,7 +18,7 @@ CONFIG_DIR="$HOME/.config"
 LOCAL_BIN_DIR="$HOME/.local/bin"
 FONTS_DIR="$HOME/.local/share/fonts"
 KONSOLE_PROFILE_DIR="$HOME/.local/share/konsole"
-KONSOLE_COLOR_DIR="$HOME/.local/share/color-schemes"
+PLASMA_COLOR_DIR="$HOME/.local/share/color-schemes"
 
 # Cores para o output
 GREEN='\033[0;32m'
@@ -52,7 +52,7 @@ install_packages() {
 
   # --- Debian/Ubuntu (apt) ---
   sudo apt update && sudo apt install -y \
-    bat cava fish lazygit lsd neovim qutebrowser starship gum waybar wlogout \
+    bat cava dunst fish lazygit lsd neovim qutebrowser starship gum waybar wlogout \
     nmap qrencode jq curl unzip mpv python3 fonts-firacode
 
   # --- Arch Linux (pacman) ---
@@ -90,7 +90,7 @@ copy_configs() {
 
   # Lista de diretórios de configuração para copiar
   configs_to_copy=(
-    bat cava fish lazygit lsd nvim qutebrowser superfile waybar wlogout
+    bat cava dunst fish lazygit lsd nvim qutebrowser superfile waybar wlogout
   )
 
   for config in "${configs_to_copy[@]}"; do
@@ -110,6 +110,10 @@ copy_configs() {
   cp -f "$DOTFILES_DIR/konsole/catppuccin-mocha.colorscheme" "$KONSOLE_PROFILE_DIR/catppuccin-mocha.colorscheme"
   echo -e "    -> Copiado ${BLUE}Konsole (perfil e tema)${NC}"
 
+  # Esquemas de cores do Plasma
+  mkdir -p "$PLASMA_COLOR_DIR"
+  cp -f "$DOTFILES_DIR/color-schemes/"* "$PLASMA_COLOR_DIR/"
+  echo -e "    -> Copiados ${BLUE}Esquemas de Cores do Plasma${NC}"
   echo -e "${GREEN}[+] Configurações copiadas com sucesso.${NC}"
   echo ""
 }
@@ -174,6 +178,10 @@ main() {
   echo ""
   echo -e "   Por favor, reinicie seu terminal ou mude para o shell 'fish'"
   echo -e "   para que todas as alterações tenham efeito."
+  echo ""
+  echo -e "   ${YELLOW}💡Dica:${NC} Para uma experiência de janelas lado a lado (tiling) no KDE,"
+  echo -e "   considere instalar o script ${BLUE}Krohnkite${NC}. Não é obrigatório, mas é recomendado."
+  echo -e "   Visite: ${BLUE}https://github.com/esjeon/krohnkite${NC}"
   echo ""
 }
 

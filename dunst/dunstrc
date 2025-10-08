@@ -1,0 +1,52 @@
+[global]
+    font = BlexMono Nerd Font 10
+    width = 320
+    height = 160
+    origin = top-right
+    offset = 20x20
+    padding = 12
+    horizontal_padding = 16
+    text_icon_padding = 8
+    frame_width = 2
+    corner_radius = 10
+
+    # Cores
+    frame_color = "#cba6f7"
+    separator_color = frame
+
+    # Transparência leve e sombra suave
+    transparency = 8
+    blur = true
+    shadow = yes
+    shadow_color = "#11111b"
+    shadow_offset = 3x3
+
+    # Ícones
+    icon_theme = Papirus
+    enable_recursive_icon_lookup = true
+    show_indicators = no
+
+    # Tempo
+    idle_threshold = 120
+    follow = keyboard
+    markup = full
+    format = "<b>%s</b>\n<span size='small'>%b</span>"
+
+    # Ordenação e empilhamento
+    stack_duplicates = true
+    sticky_history = true
+    history_length = 20
+
+[urgency_low]
+    background = "#1e1e2e"
+    foreground = "#cdd6f4"
+
+[urgency_normal]
+    background = "#1e1e2e"
+    foreground = "#cdd6f4"
+
+[urgency_critical]
+    background = "#1e1e2e"
+    foreground = "#cdd6f4"
+    frame_color = "#fab387"
+
