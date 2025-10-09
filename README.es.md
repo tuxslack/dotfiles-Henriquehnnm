@@ -23,7 +23,7 @@
 
 ## ✨ Acerca de
 
-Este repositorio reúne mi colección personal de archivos de configuración ("dotfiles") para Linux, optimizados para **Debian 13** usando la interfaz **KDE Plasma**, el editor **Neovim** con [LazyVim](https://www.lazyvim.org/) y tematizados con [Catppuccin](https://catppuccin.com/). Cada configuración está diseñada para ser minimalista, hermosa y altamente personalizada.
+Este repositorio reúne mi colección personal de archivos de configuración ("dotfiles") para Linux, optimizados para **Debian 13** usando la interfaz **KDE Plasma**, el editor **Neovim** con [AstroVim](https://astrovim.com/) y tematizados con [Catppuccin](https://catppuccin.com/). Cada configuración está diseñada para ser minimalista, hermosa y altamente personalizada.
 
 ---
 
@@ -46,7 +46,7 @@ Este repositorio reúne mi colección personal de archivos de configuración ("d
 - [Debian Linux](https://www.debian.org/) (recomendado)
 - [KDE Plasma](https://kde.org/plasma-desktop/)
 - [Fish Shell](https://fishshell.com/)
-- [Neovim](https://neovim.io/) **con [LazyVim](https://www.lazyvim.org/)**
+- [Neovim](https://neovim.io/) **con [AstroVim](https://astrovim.com/)**
 - [Starship](https://starship.rs/)
 - [Bat](https://github.com/sharkdp/bat)
 - [Cava](https://github.com/karlstav/cava)
